@@ -2,6 +2,8 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-color: #f4eeff;
+  color: #333;
 }
 main {
   display: flex;
@@ -15,4 +17,16 @@ article {
 aside {
   flex: 1;
   overflow-y: auto;
+}
+
+header {
+  flex: none;
+  height: 80px;
+  background-color: #c4c1e0;
+  border-bottom: 2px solid #c4c1e0;
+}
+footer {
+  flex: none;
+  height: 20px;
+  text-align: center;
 }
