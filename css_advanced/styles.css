@@ -1,0 +1,142 @@
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  margin: auto;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  z-index: 10;
+}
+
+header img {
+  height: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.banner {
+  background-image: url("images/Object.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  position: relative;
+}
+.banner button {
+  background-color: #c271ff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.intro {
+  display: block;
+  margin-top: 200px;
+  color: white;
+}
+.intro h1 {
+  font-size: 115px;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0;
+}
+.intro p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+.register {
+  background-color: #c271ff;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  display: block;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease-in-out;
+}
+.register :hover {
+  cursor: pointer;
+  color: #885df1;
+}
+.intro button {
+  font-size: 11px;
+  padding: 10px 16px;
+  margin: 15px auto;
+  font-weight: 550;
+}
+.mentors {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.mentors h2 {
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+.mentors h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.mentor-grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.mentor {
+  text-align: center;
+  justify-content: center;
+}
+
+.mentor img {
+  border-radius: 60%;
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+}
+
+.mentor h3 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.mentor p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 100%;
+  font-style: italic;
+}
