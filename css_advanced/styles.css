@@ -140,3 +140,33 @@ header ul li a {
   line-height: 100%;
   font-style: italic;
 }
+.quote {
+  background-color: #c271ff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.quote-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+}
+.quote-block img {
+  border-radius: 60%;
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+}
+.quote-block blockquote {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.quote-block p {
+  margin: 5px 0;
+}
+.title {
+  font-style: italic;
+  font-weight: 400;
+}
