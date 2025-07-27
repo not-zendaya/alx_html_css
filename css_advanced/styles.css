@@ -271,7 +271,7 @@ header ul li a {
 .membership {
   text-align: center;
   background-color: #071629;
-  padding: 60px 30px;
+  padding: 60px 60px;
 }
 h2 {
   font-weight: bold;
@@ -285,10 +285,10 @@ h2 span {
 }
 .membership-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   justify-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .option {
   display: flex;
@@ -318,7 +318,7 @@ h2 span {
   text-align: center;
   margin: 0 auto;
   color: white;
-  padding: 12px 30px;
+  padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 30px;
