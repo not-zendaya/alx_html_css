@@ -368,37 +368,7 @@ footer {
   background-color: #071629;
   padding: 60px 20px 30px;
   text-align: center;
-} /*
-.footer-content {
-  max-width: 1000px;
-  
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-between;
 }
-.footer-content img[alt="logo"] {
-  width: 150px;
-  height: auto;
-}
-.social-links {
-  display: flex;
-  gap: 30px;
-  justify-content: right;
-}
-.social-links img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-  vertical-align: middle;
-}
-.social-links img:hover {
-  transform: scale(1.1);
-}
-
-
-*/
 .footer-content {
   display: flex;
   justify-content: space-between;
