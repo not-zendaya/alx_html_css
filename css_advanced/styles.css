@@ -95,7 +95,7 @@ header ul li a {
   font-weight: 550;
 }
 .mentors {
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 .mentors h2 {
@@ -103,6 +103,7 @@ header ul li a {
   font-weight: 300;
   padding-top: 130px;
   padding-bottom: 80px;
+  color: white;
 }
 
 .mentors h2 span {
@@ -171,6 +172,7 @@ header ul li a {
   font-style: italic;
   font-weight: 400;
 }
+
 .videos {
   padding: 60px 80px;
   background-color: white;
@@ -185,7 +187,7 @@ header ul li a {
   margin-bottom: 50px;
 }
 
-.videos h2 span {
+.videos span {
   color: #c271ff;
   font-weight: 700;
 }
@@ -196,11 +198,11 @@ header ul li a {
   grid-gap: 10px;
   justify-items: center;
 }
-
 .video {
   width: 100%;
   position: relative;
   text-align: left;
+  min-width: 250px;
 }
 
 .video img:first-of-type {
@@ -225,49 +227,50 @@ header ul li a {
 
 .video p {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  padding: 0;
   line-height: 1.4;
 }
 .author {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 15px 0 5px 0;
+  padding: 0;
+  gap: 8px;
 }
 .author-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   object-fit: contain;
-  position: relative;
-  order: -1;
-  left: 0%;
 }
 
 .author h4 {
   font-size: 14px;
-  margin: 0;
   color: #c271ff;
+  white-space: nowrap;
 }
 
 .rating {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #c271ff;
+  margin: 0;
+  padding: 0;
 }
 
 .rating img {
   width: 10px;
   height: 10px;
   object-fit: contain;
-  left: 0;
 }
-
 .rating p {
   font-size: 12px;
-  margin: 0;
+  white-space: nowrap;
   color: #c271ff;
+  margin-left: 0;
 }
+
 .membership {
   text-align: center;
   background-color: #071629;

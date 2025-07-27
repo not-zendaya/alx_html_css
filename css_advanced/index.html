@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <img src="images/logo.png" alt="logo" />
       <nav>
-        <a href="" class="href">Courses</a>
-        <a href="" class="href">Pricing</a>
-        <a href="" class="href">Login</a>
+        <ul>
+          <li><a href="#" class="href">COURSES</a></li>
+          <li><a href="#" class="href">PRICING</a></li>
+          <li><a href="#" class="href">LOGIN</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -20,13 +28,17 @@
       <section class="banner">
         <div class="intro">
           <h1>Get Schooled</h1>
-          <p>SMILES &nbsp; &nbsp; GRIN &nbsp; &nbsp; LAUGH</p>
+          <p>
+            SMILES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GRIN &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LAUGH
+          </p>
           <button class="register">REGISTER FOR FREE</button>
         </div>
 
         <div class="mentors">
-          <h2><span>Learn</span> form the pros</h2>
-          <div class="mentor grid">
+          <h2><span>Learn</span> from the pros</h2>
+
+          <div class="mentor-grid">
             <div class="mentor">
               <img src="images/1.png" alt="mentor-1" />
               <h3>Phillip Masey</h3>
@@ -72,7 +84,7 @@
               I can't think of a better place to start learning smiling. And
               it's so fun!
               <p>Christian Walter</p>
-              <p>Weather presenter</p>
+              <p class="title">Weather presenter</p>
             </blockquote>
           </div>
         </div>
@@ -93,15 +105,11 @@
               tilted or slanted to one side.
             </p>
             <div class="author">
-              <img src="images/9.png" alt="author-1" />
+              <img src="images/1.png" alt="author-1" class="author-img" />
               <h4>Sandra Lee</h4>
             </div>
             <div class="rating">
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star-rating.png" alt="star" />
+              <img src="images/rating.png" alt="star" />
               <p><span>8 min</span></p>
             </div>
           </div>
@@ -115,16 +123,13 @@
               A facial expression where the mouth curves upward in a smile-like
               manner, but the overall expression conveys sadness or melancholy
             </p>
+
             <div class="author">
-              <img src="images/7.png" alt="author-2" />
-              <h4>Jada McCurphy</h4>
+              <img src="images/1.png" alt="author-2" class="author-img" />
+              <h4>Jude McCurphy</h4>
             </div>
             <div class="rating">
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star-rating.png" alt="star" />
+              <img src="images/rating.png" alt="star" />
               <p><span>15 min</span></p>
             </div>
           </div>
@@ -139,15 +144,11 @@
               the eyes.
             </p>
             <div class="author">
-              <img src="images/8.png" alt="author-3" />
-              <h4>Kevin Langue</h4>
+              <img src="images/1.png" alt="author-3" class="author-img" />
+              <h4>Millie Langue</h4>
             </div>
             <div class="rating">
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star-rating.png" alt="star" />
+              <img src="images/rating.png" alt="star" />
               <p><span>42 min</span></p>
             </div>
           </div>
@@ -162,15 +163,11 @@
               making others feel happy too.
             </p>
             <div class="author">
-              <img src="images/6.png" alt="author-4" />
+              <img src="images/1.png" alt="author-4" class="author-img" />
               <h4>Herman Wrice</h4>
             </div>
             <div class="rating">
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star.png" alt="star" />
-              <img src="images/star-rating.png" alt="star" />
+              <img src="images/rating.png" alt="star" />
               <p><span>22 min</span></p>
             </div>
           </div>
@@ -178,27 +175,28 @@
       </section>
 
       <section class="membership">
-        <h2><span>Free</span> Membership</h2>
+        <h2>Free<span> membership </span></h2>
         <div class="membership-options">
           <div class="option">
             <img src="images/smile.png" alt="icon" />
             <h3>100% Online</h3>
-            <p>Learn from anywhere, anytime.</p>
+            <p>This option allows you to learn from anywhere anytime.</p>
           </div>
+
           <div class="option">
             <img src="images/smile.png" alt="icon" />
             <h3>Expert Tutors</h3>
-            <p>Learn from professionals.</p>
+            <p>This allows learning from our expert professionals</p>
           </div>
           <div class="option">
             <img src="images/smile.png" alt="icon" />
             <h3>Certifications</h3>
-            <p>Earn organized certifications.</p>
+            <p>This options allows one to acquire organized certifications</p>
           </div>
           <div class="option">
             <img src="images/smile.png" alt="icon" />
             <h3>Flexible Schedules</h3>
-            <p>Learn at your own pace.</p>
+            <p>This options allows learning at your own pace</p>
           </div>
         </div>
         <button class="register">REGISTER FOR FREE</button>
@@ -210,36 +208,53 @@
           <div class="faq-item">
             <h3>What is smile school?</h3>
             <p>
-              Smile School is an online learning platform offering video
-              tutorials, courses, and mentorship from industry experts in tech,
-              design, and more. We help you grow your skills — at your own pace,
-              and with a smile!
+              Smile School is an online learning platform focused on personal
+              development through video tutorials. It offers curated content
+              from industry professionals to help users learn at their own pace.
+              The platform is 100% online, allowing access from anywhere in the
+              world. You can browse tutorials based on categories or
+              recommendations. Each course includes video content, instructor
+              bios, and progress tracking. All you need is a free membership to
+              start accessing the materials.
             </p>
           </div>
           <div class="faq-item">
             <h3>Is Smile School really free?</h3>
             <p>
-              Yes! We offer a 100% free membership with access to curated
-              learning content. Premium features such as certificates and
-              one-on-one mentoring are available through affordable upgrades.
+              Yes, Smile School offers free access to a wide range of courses
+              for all registered users. You don’t need to provide any payment
+              information to sign up. Free membership includes unlimited access
+              to beginner-level tutorials. You can upgrade to a premium
+              membership for advanced content and certifications. Even without
+              paying, you'll benefit from high-quality videos and expert
+              instruction. The goal is to make education accessible and
+              inclusive for everyone.
             </p>
           </div>
           <div class="faq-item">
-            <h3>Do I need prior experience to join?</h3>
+            <h3>Who are the mentors on Smile School?</h3>
             <p>
-              Not at all. Smile School is beginner-friendly and designed to
-              support learners from all backgrounds. Our tutorials start from
-              the basics and build up to advanced concepts.
+              The mentors are experienced professionals from various industries
+              such as tech, design, and marketing. Each mentor is carefully
+              selected based on their expertise and communication skills.
+              Profiles include details about their work experience and past
+              achievements. You'll get to watch them in action as they explain
+              real-world concepts in simple terms. Mentors also share personal
+              insights and tips that can’t be found in textbooks. This helps
+              learners gain both theoretical knowledge and practical wisdom.
             </p>
           </div>
           <div class="faq-item">
-            <h3>How can I contact support?</h3>
+            <h3>Do I receive a certificate after completing tutorials?</h3>
             <p>
-              Our friendly support team is always ready to help. You can reach
-              out to us via the contact form on the website or email us at
-              <a href="mailto:support@smileschool.com"
-                >support@smileschool.com</a
-              >
+              Yes, Smile School offers digital certificates for users who
+              complete designated learning paths. These certificates can be
+              downloaded and shared on LinkedIn or your resume. They serve as
+              proof of effort and skill acquisition. Not all tutorials are
+              certificate-eligible—only those marked as “Certified.” Completing
+              quizzes and assignments within those tutorials is required. This
+              ensures that learners actually understand the material before
+              certification.
             </p>
           </div>
         </div>
@@ -257,7 +272,7 @@
             ><img src="images/twitter.png" alt="twitter" width="20px"
           /></a>
           <a href="https://www.instagram.com/schoolSmile" target="_blank"
-            ><img src="images/instagram.png" alt="instagram" width="20px"
+            ><img src="images/instagram.png" alt="instagram" width="30px"
           /></a>
         </div>
         <p>&copy;SmileSchool 2020</p>
