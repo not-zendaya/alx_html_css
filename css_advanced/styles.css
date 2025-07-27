@@ -164,9 +164,168 @@ header ul li a {
   margin-bottom: 15px;
 }
 .quote-block p {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 .title {
+  margin-top: 5px;
   font-style: italic;
   font-weight: 400;
+}
+.videos {
+  padding: 60px 80px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.videos h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.videos h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.video img:first-of-type {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.video h3 {
+  text-align: center;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.video p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: contain;
+  position: relative;
+  order: -1;
+  left: 0%;
+}
+
+.author h4 {
+  font-size: 14px;
+  margin: 0;
+  color: #c271ff;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c271ff;
+}
+
+.rating img {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+  left: 0;
+}
+
+.rating p {
+  font-size: 12px;
+  margin: 0;
+  color: #c271ff;
+}
+.membership {
+  text-align: center;
+  background-color: #071629;
+  padding: 60px 30px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #c271ff;
+  margin-bottom: 50px;
+}
+h2 span {
+  font-weight: 300;
+  color: white;
+}
+.membership-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+.option img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.option h3 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+.option p {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+.register {
+  background-color: #c271ff;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.register :hover {
+  color: #885df1;
+  cursor: pointer;
 }
