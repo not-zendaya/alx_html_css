@@ -329,3 +329,38 @@ h2 span {
   color: #885df1;
   cursor: pointer;
 }
+.faq {
+  color: black;
+  padding: 80px 130px;
+  text-align: center;
+}
+.faq h2 {
+  color: black;
+  font-size: 64px;
+  font-weight: 300;
+}
+.faq-row {
+  color: black;
+  font-size: 32px;
+  font-weight: 300px;
+  margin-bottom: 300;
+}
+.faq-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  opacity: 0.5;
+}
