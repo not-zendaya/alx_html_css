@@ -331,7 +331,7 @@ h2 span {
 }
 .faq {
   color: black;
-  padding: 80px 130px;
+  padding: 80px 150px;
   text-align: center;
 }
 .faq h2 {
@@ -363,4 +363,84 @@ h2 span {
   line-height: 1.8;
   text-align: left;
   opacity: 0.5;
+}
+footer {
+  background-color: #071629;
+  padding: 60px 20px 30px;
+  text-align: center;
+} /*
+.footer-content {
+  max-width: 1000px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer-content img[alt="logo"] {
+  width: 150px;
+  height: auto;
+}
+.social-links {
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+}
+.social-links img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+
+*/
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #071629;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content img {
+  vertical-align: middle;
+}
+.footer-content img[alt="logo"] {
+  width: 150px;
+  height: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.social-links img[alt="facebook"] {
+  filter: brightness(0) invert(1);
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.footer-content p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbb;
 }
