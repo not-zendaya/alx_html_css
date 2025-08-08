@@ -167,7 +167,7 @@ body {
 .hero-description {
   font-size: 1rem;
   line-height: 1.6;
-  margin-top: 60px;
+  margin-top: 3rem;
   opacity: 0.8;
   max-width: 500px;
   margin-left: auto;
@@ -465,36 +465,23 @@ body {
   content: "\e914";
 }
 
-/* Icon Styles - Using CSS for visual icons */
-.icon-frequency::before {
-  content: "♪";
-  font-size: 4rem;
+i.holberton_school-icon-ic_sound:before {
+  font-size: 7rem;
   color: var(--primary-color);
 }
 
-.icon-video::before {
-  content: "▶";
-  font-size: 3.5rem;
-  color: var(--primary-color);
-  border: 3px solid var(--primary-color);
-  border-radius: 8px;
-  width: 60px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.icon-music::before {
-  content: "♫";
-  font-size: 4rem;
+i.holberton_school-icon-ic_video:before {
+  font-size: 7rem;
   color: var(--primary-color);
 }
 
-.icon-hearing::before {
-  content: "👂";
-  font-size: 3.5rem;
+i.holberton_school-icon-ic_music:before {
+  font-size: 7rem;
+  color: var(--primary-color);
+}
+
+i.holberton_school-icon-ic_hearing:before {
+  font-size: 7rem;
   color: var(--primary-color);
 }
 
@@ -568,6 +555,142 @@ body {
   }
 
   .what-we-do-container {
+    padding: 0 1rem;
+  }
+}
+
+.our-results {
+  padding: 5rem 0;
+  background: url("images/headphones_hero_2.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  color: var(--text-white);
+  text-align: center;
+}
+
+/* Fallback background */
+.our-results::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  z-index: -1;
+}
+
+.results-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.results-title {
+  margin-bottom: 40px;
+}
+
+/* Simple Pentagon Shape using CSS */
+.pentagon {
+  width: 120px;
+  height: 110px;
+  background: var(--primary-color);
+  position: relative;
+  margin: 0 auto 1rem;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-percentage {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-white);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.result-label {
+  font-size: 0.7rem;
+  color: var(--text-white);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive adjustments for Results section */
+@media (max-width: 768px) {
+  .our-results {
+    padding: 4rem 0;
+    background-attachment: scroll;
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .pentagon {
+    width: 100px;
+    height: 95px;
+  }
+
+  .result-percentage {
+    font-size: 1.5rem;
+  }
+
+  .result-label {
+    font-size: 0.65rem;
+  }
+
+  .results-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-results {
+    padding: 3rem 0;
+  }
+
+  .results-grid {
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .pentagon {
+    width: 90px;
+    height: 85px;
+  }
+
+  .result-percentage {
+    font-size: 1.3rem;
+  }
+
+  .result-label {
+    font-size: 0.6rem;
+  }
+
+  .results-container {
     padding: 0 1rem;
   }
 }
